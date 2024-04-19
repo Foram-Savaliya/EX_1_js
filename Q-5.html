@@ -1,0 +1,37 @@
+<!-- 5. Write a javascript program array delete  element array using for loop.
+let arr = [10,20,30,40,50];
+let pos = 2;
+ans :- [10,20,40,50] -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q-5</title>
+</head>
+
+<body>
+
+    <script type="text/javascript">
+        function deletevalue(arr, pos) {
+            const ans = [];
+            for (let i = 0; i < arr.length; i++) {
+                if (i !== pos) {
+                    ans.push(arr[i]);
+                }
+            }
+            return ans;
+        }
+
+        let arr = [10, 20, 30, 40, 50];
+        let pos = 2;
+        let ans = deletevalue(arr, pos);
+        console.log(ans);
+
+    </script>
+
+</body>
+
+</html>

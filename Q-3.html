@@ -1,0 +1,39 @@
+<!-- 3. Write a javascript program find to second largest element in array.
+let arr1 :- [3,12,10,8,7];
+ans :-  8 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q-3</title>
+</head>
+
+<body>
+
+    <script type="text/javascript">
+        function secondno(arr) {
+            let a = arr[0];
+            let sno = -Infinity;
+            for (let i = 1; i < arr.length; i++) {
+                if (arr[i] > a) {
+                    sno = a;
+                    a = arr[i];
+                } else if (arr[i] > sno) {
+                    sno = arr[i];
+                }
+            }
+            return arr;
+        }
+
+        let arr1 = [3, 12, 10, 8, 7];
+        let ans = secondno(arr1);
+        console.log("Second largest element:", ans);
+
+        
+    </script>
+
+</body>
+
+</html>

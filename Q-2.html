@@ -1,0 +1,41 @@
+<!--2. Write a javascript program array sorted accending order usig for loop.
+let arr1 :- [3,12,10,8,7];
+ans :- [3,7,8,10,12] -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q-2</title>
+</head>
+
+<body>
+
+    <script type="text/javascript">
+
+        let arr1 = [3, 12, 10, 8, 7];
+
+        function accending(arr) {
+            for (let i = 0; i < arr.length; i++) {
+                let tmp;
+                for (let j = i + 1; j < arr.length; j++) {
+                    if (arr[i] > arr[j]) {
+                        tmp = arr[i];
+                        arr[i] = arr[j];
+                        arr[j] = tmp;
+                    }
+                }
+            }
+            return arr;
+        }
+        accending(arr1);
+        
+        console.log(arr1);
+
+
+    </script>
+
+</body>
+
+</html>

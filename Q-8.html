@@ -1,0 +1,47 @@
+<!-- 8. Write a javascript program array  create 2d array column wise sum
+let arr = [
+            [7,8,9],
+            [1,2,3],
+            [4,5,6],
+]
+ans :- [7,1,4] = 12 
+          [8,2,5] = 15
+          [9,3,6] = 18 -->
+
+          <!DOCTYPE html>
+          <html lang="en">
+          
+          <head>
+              <meta charset="UTF-8">
+              <meta name="viewport" content="width=device-width, initial-scale=1.0">
+              <title>Q-8</title>
+          </head>
+          
+          <body>
+              <script type="text/javascript">
+                  function add(arr) {
+                      const ans = [];
+                      for (let i = 0; i < arr.length; i++) {
+                          let sum = 0;
+                          for (let j = 0; j < arr[i].length; j++) {
+                              sum = sum + arr[j][i];
+                          }
+                          ans.push(sum);
+                      }
+                      return ans;
+                  }
+          
+                  // Example usage
+                  let arr = [
+                      [7, 8, 9],
+                      [1, 2, 3],
+                      [4, 5, 6],
+                  ];
+          
+                  const addition = add(arr);
+                  console.log(addition); 
+          
+              </script>
+          </body>
+          
+          </html>

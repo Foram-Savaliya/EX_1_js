@@ -1,0 +1,40 @@
+<!-- 4. Write a javascript program new array insert element array using for loop.
+Example :- 
+let arr = [10,20,30,40,50];
+let value = 25
+let pos = 2;
+ans :- [10,20,25,30,40,50] -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q-4</title>
+</head>
+
+<body>
+
+    <script type="text/javascript">
+        function insertvalue(arr, value, pos) {
+            const newArr = [];
+            for (let i = 0; i < arr.length; i++) {
+                if (i === pos) {
+                    newArr.push(value);
+                }
+                newArr.push(arr[i]);
+            }
+            return newArr;
+        }
+
+        let arr = [10, 20, 30, 40, 50];
+        let value = 25;
+        let pos = 2;
+        let newArr = insertvalue(arr, value, pos);
+        console.log([newArr]); 
+
+    </script>
+
+</body>
+
+</html>
